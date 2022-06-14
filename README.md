@@ -11,7 +11,7 @@
 > Projeto front-end de lista de tarefas simples.
 
 > Teste o site:
-> [InstaClone](https://artaugusto.github.io/To-do-List/)
+> [To-do List](https://artaugusto.github.io/To-do-List/)
 
 ## 📝 Licença
 
