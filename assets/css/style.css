@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle-01 {
+  top: -5%;
+  left: 20%;
+  background: linear-gradient(120deg, #8d2ce2, #4a00e0);
+}
+
+.circle-02 {
+  bottom: -5%;
+  right: 20%;
+  background: linear-gradient(120deg, #2da1e2, #0016e0);
+}
+
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+
+  color: white;
+  width: 500px;
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  cursor: default;
+}
+
+.textGroup {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  display: block;
+  transform: translate(5px, 5px);
+  transform-origin: left;
+  transition: transform 0.25s;
+  font-size: 11px;
+  text-align: center;
+  z-index: -1;
+}
+
+#textTask {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: 2px solid #fff;
+  color: #fff;
+}
+
+.textGroup:focus-within .text {
+  transform: translate(0, -18px) scale(0.8);
+}
+
+#addTask {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(
+    120deg,
+    rgba(141, 44, 226, 0.3),
+    rgba(74, 0, 224, 0.2)
+  );
+}
+
+#addTask:hover {
+  background: linear-gradient(
+    120deg,
+    rgba(141, 44, 226, 0.5),
+    rgba(74, 0, 224, 0.5)
+  );
+}
+
+#todoList {
+  align-self: flex-start;
+  margin-inline: 30px;
+  margin-top: 15px;
+}
+
+#todoList div {
+  padding: 5px;
+}
+
+#todoList input {
+  margin-right: 5px;
+}
+
+#todoList input:checked ~ label {
+  text-decoration: line-through;
+}
+
+#divAtual {
+  height: 15px;
+}

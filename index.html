@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="circle circle-01"></div>
+      <div class="circle circle-02"></div>
+      <article class="card">
+        <section class="title">
+          <h1>To-do List</h1>
+        </section>
+        <section>
+          <label class="textGroup" for="">
+            <p class="text">Digite aqui sua tarefa</p>
+            <input id="textTask" type="text" autocomplete="off" value="" />
+          </label>
+          <button id="addTask">Adicionar</button>
+        </section>
+
+        <section id="todoList">
+          <div id="divAtual"></div>
+        </section>
+      </article>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
